@@ -50,23 +50,23 @@
 		}
 		
 	?>
-		<script type="text/javascript" language="javascript" src="javascript/graphs.js" ></script>	
+	<script type="text/javascript" language="javascript" src="javascript/graphs.js" ></script>	
 	
 	<!--[if IE]><script type="text/javascript" src="javascript/excanvas.js"></script><![endif]-->
 
-<style type="text/css">
-	.ui-datepicker {
-		padding: 0px !important;
-		width:auto !important;
-	}
-</style>
-<!-- WRAPPER START -->
+	<style type="text/css">
+		.ui-datepicker {
+			padding: 0px !important;
+			width:auto !important;
+		}
+	</style>
+
 </head>
 
 <body>
-
+<!-- WRAPPER START -->
 <div class="container_16" id="wrapper">	
-		<!-- HIDDEN COLOR CHANGER -->      
+		
         	<!--LOGO-->
 	<div class="grid_8" id="logo">Admin - Website Administration</div>
     <div class="grid_8">
@@ -78,6 +78,7 @@
 			  </span>
 		  </div><!-- USER TOOLS END --> 
     </div>
+	<!-- HEADER START -->
 	<div class="grid_16" id="header">
 	<!-- MENU START -->
 	<div id="menu">
@@ -109,6 +110,7 @@
 		</ul>
 	</div><!-- MENU END -->
 	</div>
+	<!-- HEADER END -->
 	<div class="grid_16">
 	<!-- TABS START -->
 		<div id="tabs">
@@ -201,7 +203,7 @@
 						<tbody>
                         
 						  <tr>
-                          <?php
+                        			  <?php
 						   $pageObj = new PS_Pagination('client','*','user_status="Active"',20,5,'user_status=Active');
 						   $pageObj->setDebug(true);                                   
 						   $rs = $pageObj->paginate();  
