@@ -183,7 +183,7 @@
 	        	<div class="portlet-header fixed ui-widget-header ui-corner-top">
 					<img src="images/icons/user.gif" width="16" height="16" alt="Latest Registered Users" />
 					Last Registered users
-				</div> <!--START--textcontent-->
+				</div> <!--START-textcontent-->
 				
 				<div class="portlet-content nopadding">
 					<form action="" method="post">
