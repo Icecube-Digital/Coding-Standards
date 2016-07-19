@@ -12,10 +12,10 @@ class PS_Pagination
 	var $max_pages = 0;
 	var $offset = 0;
 	
-    function PS_Pagination($table,$lsQry,$cond, $rows_per_page, $links_per_page, $append = "") 
-    {
-       
-    }	      
+	function PS_Pagination($table,$lsQry,$cond, $rows_per_page, $links_per_page, $append = "") 
+	{
+		
+	}	      
     
 	function paginate() 
     	{	 
