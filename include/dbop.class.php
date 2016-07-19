@@ -1,5 +1,5 @@
 <?php
-  	// error_reporting(0);
+    // error_reporting(0);
     require_once("config.php");
     class dbop 
     {
@@ -10,7 +10,7 @@
         var $lsQry;
         
         //  Constructor For class which define database connection 
-     /*   function dbop() 
+	/*   function dbop() 
         {
             $this->dbCon = mysql_connect(HOST,USER,PWD)  or die('Could not connect :'.mysql_error());
             mysql_select_db(DB, $this->dbCon)or die('DataBase Not Found'.mysql_error());
@@ -32,7 +32,7 @@
         {
            
         }
-         function getAllRecordcondition($table,$fieldArray,$condition) 
+        function getAllRecordcondition($table,$fieldArray,$condition) 
         {
             
         }
@@ -128,20 +128,15 @@
        {
            
        }
-	function deleteByCondition($table,$condition) 
-        {
-           
-        }
-	   
+       function deleteByCondition($table,$condition) 
+       {
+          
+       }
+       function deleteAll($table) 
+       {
+       
+       }
 
-
-	function deleteAll($table) 
-        {
-        
-           
-        }
-	   
     }
-    
     
 ?>
