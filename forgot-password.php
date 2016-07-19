@@ -14,7 +14,7 @@ include('Mail.php');
 $mail = new Mail();
 
 $dbop = new dbop();
-if(isset($_POST['btnsubmit']))
+if(isset($_POST['btnSubmit']))
 {
 	$result = $dbop->getSelectedRecord('user','*',"username='".mysql_real_escape_string($_POST['txtUser'])."'");
 	//$result=mysql_query($query);
@@ -114,11 +114,10 @@ function checkfrmBlankValidation()
 			</p>			
 			
 			<br />
-            <div  style="width:270px;">
-			
-			<div  class="black_button">
-				<input type="submit" name="btnsubmit" class="black_button_btn" value="SUBMIT" >
-			</div>
+        		<div  style="width:270px;">
+				<div  class="black_button">
+					<input type="submit" name="btnSubmit" class="black_button_btn" value="SUBMIT" />
+				</div>
 			</div>
 			
 			
