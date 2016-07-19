@@ -9,7 +9,7 @@ include('include/config.php');
 include('include/dbop.class.php');
 
 $dbop = new dbop();
-if(isset($_POST['btnsubmit']))
+if(isset($_POST['btnSubmit']))
 {
 	$result = $dbop->getSelectedRecord('user','*',"username='".$_POST['txtUser']."' AND password='".$_POST['txtPwd']."'");
 	//$result=mysql_query($query);
@@ -56,7 +56,6 @@ width:320px;}.container_16{margin-left:100px;magin-right:100px;}.label_re{width:
 left;}.black_button{float:left;width:auto;}#errordiv{ width:270px;}</style><![endif]-->
 <script type="text/javascript" language="javascript">
 
-
 function checkfrmBlankValidation()
 {	
 	usr=document.getElementById('txtUser').value;
@@ -69,8 +68,6 @@ function checkfrmBlankValidation()
 	
 
 }
-
-
 
 </script>
 </head>
@@ -100,13 +97,13 @@ function checkfrmBlankValidation()
 			</div>
 			<br />
 			<br />
-            <div  style="width:270px;">
-			<label class="label_re">
+            		<div  style="width:270px;">
+				<label class="label_re">
 				<input id="checkbox" type="checkbox" name="chkrememberme">Remember me</label>
 			
-			<div  class="black_button">
-				<input type="submit" name="btnsubmit" class="black_button_btn" value="Authentification" >
-			</div>
+				<div  class="black_button">
+					<input type="submit" name="btnSubmit" class="black_button_btn" value="Authentification" />
+				</div>
 			</div>
 			
 			
